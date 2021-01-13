@@ -1,0 +1,44 @@
+<!-- *********************************************************************** -->
+<!--                                                                         -->
+<!--                                                      :::      ::::::::  -->
+<!-- index.html                                         :+:      :+:    :+:  -->
+<!--                                                  +:+ +:+         +:+    -->
+<!-- By: kefujiwa <kefujiwa@student.42tokyo.jp>     +#+  +:+       +#+       -->
+<!--                                              +#+#+#+#+#+   +#+          -->
+<!-- Created: 2021/01/14 00:03:02 by kefujiwa          #+#    #+#            -->
+<!-- Updated: 2021/01/14 00:19:00 by kefujiwa         ###   ########.fr      -->
+<!--                                                                         -->
+<!-- *********************************************************************** -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My first Vue app</title>
+    <script src="https://unpkg.com/vue"></script>
+  </head>
+  <body>
+    <div id="app">
+		<input type="button" value="SHOW" v-on:click="show">
+		<input type="button" value="HIDE" v-on:click="hide">
+      	<p v-if="seen">{{ message }}</p>
+    </div>
+
+    <script>
+      var app = new Vue({
+        el: "#app",
+        data: {
+          message: "Hello Vue!",
+          seen: true
+        },
+		methods: {
+			show() {
+				this.seen = true
+			},
+			hide() {
+				this.seen = false
+			}
+		}
+      });
+    </script>
+  </body>
+</html>
