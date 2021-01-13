@@ -6,32 +6,32 @@
 <!-- By: kefujiwa <kefujiwa@student.42tokyo.jp>     +#+  +:+       +#+       -->
 <!--                                              +#+#+#+#+#+   +#+          -->
 <!-- Created: 2021/01/14 00:32:45 by kefujiwa          #+#    #+#            -->
-<!-- Updated: 2021/01/14 01:05:21 by kefujiwa         ###   ########.fr      -->
+<!-- Updated: 2021/01/14 01:15:02 by kefujiwa         ###   ########.fr      -->
 <!--                                                                         -->
 <!-- *********************************************************************** -->
 
 <!DOCTYPE html>
 <html>
-<head>
-	<title>My first Vue app</title>
-	<script src="https://unpkg.com/vue"></script>
-</head>
-<body>
-	<div id="app">
-		<hello></hello>
-		<p>{{ message }}</p>
-	</div>
+	<head>
+		<title>My first Vue app</title>
+		<script src="https://unpkg.com/vue"></script>
+	</head>
+	<body>
+		<div id="app">
+			<hello></hello>
+			<p>{{ message }}</p>
+		</div>
 
-	<script>
-	Vue.component('hello', {
-		template: '<h1>Hello Vue!</h1>'
-	})
-	var app = new Vue({
-		el: '#app',
-		data: {
-			message: 'Hello Vue!'
-		}
-	})
-	</script>
-</body>
+		<script>
+		Vue.component('hello', {
+			template: '<h1>Hello Vue!</h1>'
+		});
+		var app = new Vue({
+			el: '#app',
+			data: {
+				message: 'Hello Vue!'
+			}
+		});
+		</script>
+	</body>
 </html>
