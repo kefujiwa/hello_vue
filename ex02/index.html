@@ -6,7 +6,7 @@
 <!-- By: kefujiwa <kefujiwa@student.42tokyo.jp>     +#+  +:+       +#+       -->
 <!--                                              +#+#+#+#+#+   +#+          -->
 <!-- Created: 2021/01/14 00:03:02 by kefujiwa          #+#    #+#            -->
-<!-- Updated: 2021/01/14 01:33:21 by kefujiwa         ###   ########.fr      -->
+<!-- Updated: 2021/01/14 01:38:16 by kefujiwa         ###   ########.fr      -->
 <!--                                                                         -->
 <!-- *********************************************************************** -->
 
@@ -18,8 +18,8 @@
 	</head>
 	<body>
 		<div id="app">
-			<button type="button" value="SHOW" v-on:click="show">
-			<button type="button" value="HIDE" v-on:click="hide">
+			<button type="button" v-on:click="show">SHOW</button>
+			<button type="button" v-on:click="hide">HIDE</button>
 			<p v-if="seen">{{ message }}</p>
 		</div>
 
